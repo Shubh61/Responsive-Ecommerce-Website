@@ -100,6 +100,8 @@ menuItems.forEach((item,index) => {
         currentProductPrice.textContent = "$" + choosenProduct.price;
         currentProductImg.src = choosenProduct.colors[0].img;
 
+
+        console.log('this is the choosen product colors',choosenProduct.colors);
         // assign new colors
         currentProductColors.forEach((color, index) => {
             color.style.backgroundColor = choosenProduct.colors[index].code;
